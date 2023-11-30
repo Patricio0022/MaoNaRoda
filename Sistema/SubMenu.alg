@@ -8,8 +8,35 @@ var
 opt,opt1: inteiro
 teste: caractere
 
+funcao limpartela(): caractere
+		var
+		inicio
+			escreval("            			             .")
+			escreval("             			             .")
+			escreval("            			             .")
+			escreval("             			             .")
+			escreval("            			             .")
+			escreval("             			             .")
+			escreval("            			             .")
+			escreval("             			             .")
+			escreval("            			             .")
+			escreval("             			             .")
+			escreval("            			             .")
+			escreval("             			             .")
+			escreval("            			             .")
+			escreval("             			             .")
+			escreval("            			             .")
+			escreval("             			             .")
+			escreval("            			             .")
+			escreval("             			             .")
+			escreval("            			             .")
+			escreval("             			             .")
+			escreval("            			             .")
+  	fimfuncao
+
+
+
 inicio
-repita
 
 escreval("_____      # __  __      #  _______      #  #          #  # ___ __ __     # ______      # ___   __      # __  __      #
 /_____/\     #/_/\/_/\     #/_______/\     #  #          #  #/__//_//_/\    #/_____/\     #/__/\ /__/\    #/_/\/_/\     #
@@ -18,6 +45,13 @@ escreval("_____      # __  __      #  _______      #  #          #  # ___ __ __ 
   \_::._\:\  #  \:\ \:\ \  #  \::  _  \ \  #  #\__::::\/ #  #  \:.\-/\  \ \ #  \::___\/_  #  \:. _    \ \ #  \:\ \:\ \  #
     /____\:\ #   \:\_\:\ \ #   \::(_)  \ \ #  #          #  #   \. \  \  \ \#   \:\____/\ #   \. \`-\  \ \#   \:\_\:\ \ #
     \_____\/ #    \_____\/ #    \_______\/ #  #          #  #    \__\/ \__\/#    \_____\/ #    \__\/ \__\/#    \_____\/ #")
+
+    
+limpartela()
+
+repita
+
+
 
 escreval("1:","Veículos")
 escreval("2:","Tipos de Veículos")
