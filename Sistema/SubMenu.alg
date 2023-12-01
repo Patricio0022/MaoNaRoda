@@ -2,7 +2,7 @@ algoritmo "Submenu"
 // Disciplina  :  Trabalho
 // Professor   : [Henrique]
 // Descrição   : Submenus
-// Autor(a)    : Nome do(a) aluno(a)
+// Autor(a)    : Daniel Lucas Patrício de Carvalho
 // Data atual  : DATA_ATUAL/MES_ATUAL/ANO_ATUAL
 var
 opt,opt1: inteiro
@@ -60,12 +60,19 @@ escreval("3:","Comprar")
 escreval("4:","Alugar")
 escreval("6:","Voltar ao menu principal")
 
+limpartela()
+
+
+
       leia(opt)
       escolha opt
 
     caso 1
-      se ( opt >0) entao
+      se ( opt = 1) entao
        escreval("Você escolheu a opção Veículos")//opçao 1 de opt
+       
+limpartela()  
+
        escreval("1-" ,"Motos")
        escreval("2-", "Carros")
        escreval("3-","Aviões")
@@ -73,31 +80,34 @@ escreval("6:","Voltar ao menu principal")
             leia(opt1)//opcao motos
               escolha opt1//opcao motos
               caso 1
-              se ( opt1 >0) entao
+              se ( opt1 = 1) entao
               escreval("Voce escolheu Motos")
+limpartela()
               escreval("Biz")
               escreval("Shinerai")
               senao escreval("opção inválida")
                fimse
-
+limpartela()
               caso 2
-              se ( opt1 >0) entao//carros
+              se ( opt1 = 2) entao//carros
               escreval("Você escolheu carros")
+limpartela()
               escreval("Porsche")
               escreval("Ferrari")
               escreval("Tesla")
               senao escreval("opção inválida")
                fimse
-
+limpartela()
                 caso 3
-              se ( opt1 >0) entao//avioes
+              se ( opt1 = 3) entao//avioes
               escreval("Você escolheu Aviões")
+limpartela()
               escreval("Bombardier Global Express ")
               escreval("Bombardier Challenger 604")
               escreval("Embraer Legacy 650")
               senao escreval("opção inválida")
                fimse
-
+limpartela()
                 
                   fimescolha
 
