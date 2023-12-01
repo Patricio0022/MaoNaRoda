@@ -10,7 +10,7 @@ teste: caractere
 
 funcao limpartela(): caractere
 		var
-    
+
 		inicio
 			escreval("            			             .")
 			escreval("             			             .")
@@ -54,33 +54,49 @@ repita
 
 
 
-escreval("1:","Veículos")
-escreval("2:","Tipos de Veículos")
-escreval("3:","Valores")
-escreval("4:","Comprar")
-escreval("5:","Alugar")
+escreval("1:","Veículos e Modelos")// veiculos e tipos de veiculos
+escreval("2:","Valores")
+escreval("3:","Comprar")
+escreval("4:","Alugar")
 escreval("6:","Voltar ao menu principal")
 
-leia(opt)
+      leia(opt)
       escolha opt
 
-      caso 1
+    caso 1
       se ( opt >0) entao
-      escreval("Você escolheu a opção Veículos")//opçao 1 de opt
+       escreval("Você escolheu a opção Veículos")//opçao 1 de opt
        escreval("1-" ,"Motos")
        escreval("2-", "Carros")
        escreval("3-","Aviões")
        
-            leia(opt1)
-              escolha opt1
+            leia(opt1)//opcao motos
+              escolha opt1//opcao motos
               caso 1
               se ( opt1 >0) entao
-              escreval("Voce escolheu motos")
+              escreval("Voce escolheu Motos")
               escreval("Biz")
               escreval("Shinerai")
               senao escreval("opção inválida")
-              
-              fimse
+               fimse
+
+              caso 2
+              se ( opt1 >0) entao//carros
+              escreval("Você escolheu carros")
+              escreval("Porsche")
+              escreval("Ferrari")
+              escreval("Tesla")
+              senao escreval("opção inválida")
+               fimse
+
+                caso 3
+              se ( opt1 >0) entao//avioes
+              escreval("Você escolheu Aviões")
+              escreval("Bombardier Global Express ")
+              escreval("Bombardier Challenger 604")
+              escreval("Embraer Legacy 650")
+              senao escreval("opção inválida")
+               fimse
 
                 
                   fimescolha
@@ -91,9 +107,9 @@ leia(opt)
 
       
       
-       caso 2
+    caso 2
       se ( opt >0) entao //opcao 2 de opt
-        escreval("Você escolheu a opção Tipos de Veículos")
+        escreval("Você escolheu a opção Valores")
           senao escreval("opção inválida")
       fimse
     
