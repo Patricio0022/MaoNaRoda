@@ -11,6 +11,4 @@ O sistema contém um menu principal com as principais funcionalidades conectando
 
 As ferramentas que estão sendo utilizadas no momento são:
 
-GitHub 
-Trello
-Visualg
+GitHub ,Trello, Visualg, VisualStudioCode(Extensão Design liquído)
