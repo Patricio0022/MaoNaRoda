@@ -10,6 +10,7 @@ teste: caractere
 
 funcao limpartela(): caractere
 		var
+    
 		inicio
 			escreval("            			             .")
 			escreval("             			             .")
