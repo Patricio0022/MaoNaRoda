@@ -5,7 +5,7 @@ algoritmo "Submenu"
 // Autor(a)    : Daniel Lucas Patrício de Carvalho
 // Data atual  : DATA_ATUAL/MES_ATUAL/ANO_ATUAL
 var
-opt,opt1: inteiro
+opt,opt1,optvalue: inteiro
 teste: caractere
 
 funcao limpartela(): caractere
@@ -58,7 +58,7 @@ escreval("1:","Veículos e Modelos")// veiculos e tipos de veiculos
 escreval("2:","Valores")
 escreval("3:","Comprar")
 escreval("4:","Alugar")
-escreval("6:","Voltar ao menu principal")
+escreval("6:","Voltar ao Menu Principal")
 
 limpartela()
 
@@ -118,8 +118,53 @@ limpartela()
       
       
     caso 2
-      se ( opt >0) entao //opcao 2 de opt
+      se ( opt = 2) entao //opcao 2 de opt
         escreval("Você escolheu a opção Valores")
+
+                  escreval("1-","Preço Motos")
+                  escreval("2-","Preço Carros")
+                  escreval("3-","Preço Aviões")
+                  
+                        leia(optvalue)//opcao valores                          // juntar com comprar, alugar
+                          escolha optvalue//opcao valores
+                          caso 1
+                          se ( optvalue = 1) entao//valor moto
+                          escreval("Voce escolheu valores de Motos")
+            limpartela()
+                          escreval("Biz- ", "1000 R$")
+                          escreval("Shinerai- ", "1000 R$")
+                          escreval("Shinerai- ", "1000 R$")
+                          senao escreval("opção inválida")
+                          fimse
+            limpartela()
+                          caso 2
+                          se ( optvalue = 2) entao//valor carros
+                          escreval("Voce escolheu valores de carros")
+            limpartela()
+                          escreval("Porsche- ", "1000 R$")
+                          escreval("Ferrari- ", "1000 R$")
+                          escreval("Tesla- ", "1000 R$")
+                          senao escreval("opção inválida")
+                          fimse
+            limpartela()
+                            caso 3
+                          se ( optvalue = 3) entao//valor avioes
+                          escreval("Voce escolheu valores de Aviões")
+            limpartela()
+                          escreval("Bombardier Global Express - ", "1000 R$")
+                          escreval("Bombardier Challenger 604 - ", "1000 R$")
+                          escreval("Embraer Legacy 650 - ", "1000 R$")
+                          senao escreval("opção inválida - ", "1000 R$")
+                          fimse
+            limpartela()
+                            
+                              fimescolha
+
+
+
+
+
+
           senao escreval("opção inválida")
       fimse
     
