@@ -12,7 +12,7 @@ funcao limpartela(): caractere
 		var
 
 		inicio
-			escreval("            			             .")
+			escreval("            		algo           .")
 			escreval("             			             .")
 			escreval("            			             .")
 			escreval("             			             .")
@@ -33,7 +33,7 @@ funcao limpartela(): caractere
 			escreval("            			             .")
 			escreval("             			             .")
 			escreval("            			             .")
-      escreval("")
+      escreval("       ")
   	fimfuncao
 
 
