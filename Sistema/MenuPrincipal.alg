@@ -1,4 +1,4 @@
-Algoritmo "trabalho mao na roda (dia 11)"
+Algoritmo "trabalho mao na roda"
 
 Var
 opcaoMenu, msgcliente , subOpcaoMenu: Caractere
@@ -11,11 +11,11 @@ escreval ("como podemos te ajudar hoje ")
 escreval ("----------------------------")
 
    Repita
-Escreval("Menu Inicial:")
+Escreval("Menu Inicial")
 Escreval("1. Venda")
-Escreval("2. Dúvidas Frequentes")
+Escreval("2. cnh ")
 Escreval("3. Fale Conosco")
-Escreval("4.        ")
+Escreval("4. duvidas frequentes")
 Escreval("5. Sair")
 Escreva("Escolha uma opção: ")
 Leia(opcaoMenu)
@@ -32,31 +32,30 @@ Escreval("d. Voltar ao Menu Inicial")
 Escreval("Escolha uma opção: ")
 Leia(subOpcaoMenu)
 Escolha subOpcaoMenu
-         caso "a"
-         limpatela
+        caso "a"
+        limpatela
 
-         caso "b"
-         limpatela
+        caso "b"
+        limpatela
 
-         Caso "c"
-         limpatela
+        Caso "c"
+        limpatela
 
-         Caso "d"
-
-
+        Caso "d"
+        limpatela
 Escreval("Opção inválida. Tente novamente.")
 FimEscolha
 Até subOpcaoMenu = "d"
 
 //HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
-         Caso "2"
-         limpatela
+        Caso "2"
+        limpatela
 
 
 
 //AAAAAAAAAAAAAAAAAAAAAAAAAA
-         caso "3"
-         limpatela
+        caso "3"
+        limpatela
    Repita
 Escreval("Fale Conosco-Mão na Roda")
 Escreval("1. Enviar mensagem")
