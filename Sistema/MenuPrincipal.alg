@@ -5,7 +5,7 @@ opcaoMenu, msgcliente , subOpcaoMenu: Caractere
 
 Inicio
 escreval ("----------------------------")
-escreval ("seja bem vindo a mão na roda")
+escreval ("seja bem vindo a mão na rod")
 escreval ("----------------------------")
 escreval ("como podemos te ajudar hoje ")
 escreval ("----------------------------")
