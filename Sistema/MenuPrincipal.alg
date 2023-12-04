@@ -5,7 +5,7 @@ opcaoMenu, msgcliente , subOpcaoMenu: Caractere
 
 Inicio
 escreval ("----------------------------")
-escreval ("seja bem vindo a mão na rod")
+escreval ("seja bem vindo a mão na roda")
 escreval ("----------------------------")
 escreval ("como podemos te ajudar hoje ")
 escreval ("----------------------------")
@@ -48,8 +48,24 @@ FimEscolha
 Até subOpcaoMenu = "d"
 
 //HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
-        Caso "2"
-        limpatela
+      Caso "2"
+limpatela
+Var
+  opcaoMenu, msgcliente, subOpcaoMenu: Caractere
+  nomeCliente, categoriaCNH: String
+  idadeCliente: Inteiro
+  numeroCNH: Longo
+  cnhArmazenada: Logico // Para verificar se as informações da CNH foram armazenadas
+inicio
+
+Escreva("Digite o nome do cliente: ")
+Leia(nomeCliente)
+Escreva("Digite a idade do cliente: ")
+Leia(idadeCliente)
+Escreva("Digite o número da CNH: ")
+Leia(numeroCNH)
+Escreva("Digite a categoria da CNH: ")
+Leia(categoriaCNH)
 
 
 
