@@ -33,6 +33,7 @@ funcao limpartela(): caractere
 			escreval("            			             .")
 			escreval("             			             .")
 			escreval("            			             .")
+      escreval("")
   	fimfuncao
 
 
