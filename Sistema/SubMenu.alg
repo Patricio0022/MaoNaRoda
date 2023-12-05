@@ -154,7 +154,7 @@ limpartela()
                           se ( optvalue = 3) entao//valor avioes
                           escreval("Voce escolheu valores de Aviões")
             limpartela()
-                          escreval("Bombardier Global Express - ", "1000 R$")
+                          escreval("Bombardier Global Express - ", "10000 R$")
                           escreval("Bombardier Challenger 604 - ", "1000 R$")
                           escreval("Embraer Legacy 650 - ", "1000 R$")
                           senao escreval("opção inválida - ", "1000 R$")
@@ -223,7 +223,7 @@ caso 3
                           se ( optbuy = 5) entao//juros 
                           escreval("Voce escolheu Juros")
             limpartela()
-                          escreval("1000 R$")
+                          escreval("10000 R$")
                           escreval("1000 R$")
                           escreval("1000 R$")
                           senao escreval("opção inválida - ")
