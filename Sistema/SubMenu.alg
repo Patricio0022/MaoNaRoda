@@ -5,7 +5,7 @@ algoritmo "Submenu"
 // Autor(a)    : Daniel Lucas Patrício de Carvalho
 // Data atual  : DATA_ATUAL/MES_ATUAL/ANO_ATUAL
 var
-opt,opt1,optvalue,optbuy: inteiro
+opt,opt1,optvalue,optbuy,optcd: inteiro
 teste: caractere
 
 funcao limpartela(): caractere
@@ -179,29 +179,68 @@ limpartela()
 
 
 caso 3
-  se ( opt = 3) entao //opcao 3 de opt
-         escreval("Você escolheu a opção Compras")
-         senao escreval("opção inválida")
-  fimse
+  se ( opt = 3) entao //opcao 3 de opt compras de automoveis
+         escreval("Você escolheu a opção Compras de Automoveis")
+         
 
-                  escreval("1-","Comprar")
+                  escreval("1-","Comprar")//sub menu dentro de compras
                   escreval("2-","Alugar")
                   escreval("3-","Parcelas")
                   escreval("4-","Descontos")
                   escreval("5-","Juros")
+                  senao escreval("opção inválida")
+  fimse
                   
                         leia(optbuy)//opcao compras                         
                           escolha optbuy//opcao compras
                           
                           caso 1
                           se ( optbuy = 1) entao //comprar
-                          escreval("Voce escolheu Comprar")
+                          escreval("Você escolheu compras de veículos")
+                           escreval("Escolha o tipo de veículo:")
+                            (".")
+                            escreval("1- Carros luxos")
+                            escreval("2- Motocicleta luxos")
+
+                           leia(optcd)
+                                     escolha optcd
+                                     
+                                     caso 1
+                                        se ( optcd = 1) entao 
+                                          escreval("Carros Luxo")
+                                          escreval("1 - Mercedes-AMG GT")
+                                          escreval("2 - BMW 8 Series")
+                                          escreval("3 - BMW i8")
+                                          escreval("4 - AudiA8")
+                                          escreval("5 - Audi R8")
+                                          escreval("6 - Lexus LC")
+                                          escreval("7 - Lexus RX ")
+                                          escreval("8 - Jaguar XJ")
+                                          escreval("9 - Ferrari 812")
+                                          escreval("10 - Ferrari F8 Tributo")
+                                          senao escreval("opção inválida")
+                                          fimse
+limpartela()
+                                           caso 2 
+                                        se ( optcd = 2) entao 
+                                         escreval("Motocicletas Luxo")
+                                         escreval("1 - Ducati Panigale V4")
+                                         escreval("2 - BMW S 1000 RR")
+                                         escreval("3 - BMW R 1250 GS")
+                                         escreval("4 - Harley-Davidson CVO Limited")
+                                         escreval("5 - Harley-Davidson LiveWire")
+                                         escreval("6 - Yamaha MT")
+                                         escreval("7 - Yamaha MT-09")
+                                         escreval("8 - Indian Roadmaster")
+                                         escreval("9 - Triumph Rocket 3")
+                                         escreval("10 - Ferrari F8 Tributo")
+                                         senao escreval("opção inválida")
+                                        fimse
             limpartela()
-                          escreval("Biz- ", "1000 R$")
-                          escreval("Shinerai- ", "1000 R$")
-                          escreval("Shinerai- ", "1000 R$")
+                                        fimescolha//optcd
                           senao escreval("opção inválida")
                           fimse
+
             limpartela()
                           caso 2
                           se ( optbuy = 2) entao//alugar
@@ -243,7 +282,7 @@ caso 3
                           senao escreval("opção inválida - ")
                           fimse
 
-                            fimescolha
+                            fimescolha//optbuy
                             
 
 
@@ -253,7 +292,7 @@ caso 3
 
 
 
-fimescolha
+fimescolha//opt
 
 ate ( opt = 6)
 fimalgoritmo
