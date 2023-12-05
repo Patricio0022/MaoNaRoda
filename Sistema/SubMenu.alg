@@ -134,7 +134,7 @@ limpartela()
                   escreval("2-","Preço Motocicletas de luxo")
                   
                   
-                        leia(optvalue)//opcao valores                          // juntar com comprar, alugar
+                        leia(optvalue)//opcao valores                          
                           escolha optvalue//opcao valores
                           caso 1
                           se ( optvalue = 1) entao//valor carro
