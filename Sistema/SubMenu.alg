@@ -76,41 +76,47 @@ limpartela()
 
        escreval("1-" ,"Motos")
        escreval("2-", "Carros")
-       escreval("3-","Aviões")
        
-            leia(opt1)//opcao motos
-              escolha opt1//opcao motos
+       
+            leia(opt1)//opcao carros
+              escolha opt1//opcao carros
               
               caso 1
               se ( opt1 = 1) entao
-              escreval("Voce escolheu Motos")
-limpartela()
-              escreval("Biz")
-              escreval("Shinerai")
+              escreval("1 - Mercedes-AMG GT")
+              escreval("2 - BMW 8 Series")
+              escreval("3 - BMW i8")
+              escreval("4 - AudiA8")
+              escreval("5 - Audi R8")
+              escreval("6 - Lexus LC")
+              escreval("7 - Lexus RX ")
+              escreval("8 - Jaguar XJ")
+              escreval("9 - Ferrari 812")
+              escreval("10 - Ferrari F8 Tributo")
               senao escreval("opção inválida")
                fimse
 limpartela()
               caso 2
-              se ( opt1 = 2) entao//carros
-              escreval("Você escolheu carros")
+              se ( opt1 = 2) entao//motos
+              escreval("Você escolheu Motocicletas")
 limpartela()
-              escreval("Porsche")
-              escreval("Ferrari")
-              escreval("Tesla")
-              senao escreval("opção inválida")
+               escreval("Preço de mercado Motocicletas de Luxo")
+            limpartela()
+              escreval("1 - Ducati Panigale V4")
+              escreval("2 - BMW S 1000 RR")
+              escreval("3 - BMW R 1250 GS")
+              escreval("4 - Harley-Davidson CVO Limited")
+              escreval("5 - Harley-Davidson LiveWire")
+              escreval("6 - Yamaha MT")
+              escreval("7 - Yamaha MT-09")
+              escreval("8 - Indian Roadmaster")
+              escreval("9 - Triumph Rocket 3")
+              escreval("10 - Ferrari F8 Tributo")
+                senao escreval("opção inválida")
                fimse
 limpartela()
-                caso 3
-              se ( opt1 = 3) entao//avioes
-              escreval("Você escolheu Aviões")
-limpartela()
-              escreval("Bombardier Global Express ")
-              escreval("Bombardier Challenger 604")
-              escreval("Embraer Legacy 650")
-              senao escreval("opção inválida")
-               fimse
-limpartela()
-                
+               
+
                   fimescolha
 
 
@@ -124,40 +130,48 @@ limpartela()
           senao escreval("opção inválida")
       fimse
                   
-                  escreval("1-","Preço Motos")
-                  escreval("2-","Preço Carros")
-                  escreval("3-","Preço Aviões")
+                  escreval("1-","Preço Carros de luxo")
+                  escreval("2-","Preço Motocicletas de luxo")
+                  
                   
                         leia(optvalue)//opcao valores                          // juntar com comprar, alugar
                           escolha optvalue//opcao valores
                           caso 1
-                          se ( optvalue = 1) entao//valor moto
-                          escreval("Voce escolheu valores de Motos")
+                          se ( optvalue = 1) entao//valor carro
+
+                          escreval("Preço De Mercado Carros de Luxo")
             limpartela()
-                          escreval("Biz- ", "1000 R$")
-                          escreval("Shinerai- ", "1000 R$")
-                          escreval("Shinerai- ", "1000 R$")
+                          escreval("1 - Mercedes-AMG GT R$2.500.000 ")
+                          escreval("2 - BMW 8 Series R$800.000")
+                          escreval("3 - BMW i8 R$710.500")
+                          escreval("4 - AudiA8 R$464.000")
+                          escreval("5 - Audi R8 R$1.160.000")
+                          escreval("6 - Lexus LC 1.279.000,00$")
+                          escreval("7 - Lexus RX  R$525.000")
+                          escreval("8 - Jaguar XJ R$250.000")
+                          escreval("9 - Ferrari 812 R$3.950.000")
+                          escreval("10 - Ferrari F8 Tributo R$4.000.000")
+
                           senao escreval("opção inválida")
                           fimse
             limpartela()
                           caso 2
-                          se ( optvalue = 2) entao//valor carros
-                          escreval("Voce escolheu valores de carros")
+                          se ( optvalue = 2) entao//valor motos
+                          escreval("Preço De Mercado Motocicletas de Luxo")
             limpartela()
-                          escreval("Porsche- ", "1000 R$")
-                          escreval("Ferrari- ", "1000 R$")
-                          escreval("Tesla- ", "1000 R$")
+                          escreval("1 - Ducati Panigale V4 R$160.000 ")
+                          escreval("2 - BMW S 1000 RR R$125.000")
+                          escreval("3 - BMW R 1250 GS R$130.000")
+                          escreval("4 - Harley-Davidson CVO Limited R$110.000")
+                          escreval("5 - Harley-Davidson LiveWire R$400.000")
+                          escreval("6 - Yamaha MT 110.000$")
+                          escreval("7 - Yamaha MT-09  R$60.000")
+                          escreval("8 - Indian Roadmaster R$100.000")
+                          escreval("9 - Triumph Rocket 3 R$130.000")
+                          escreval("10 - Ferrari F8 Tributo R$100.000")
+                          
+                      
                           senao escreval("opção inválida")
-                          fimse
-            limpartela()
-                            caso 3
-                          se ( optvalue = 3) entao//valor avioes
-                          escreval("Voce escolheu valores de Aviões")
-            limpartela()
-                          escreval("Bombardier Global Express - ", "1000 R$")
-                          escreval("Bombardier Challenger 604 - ", "1000 R$")
-                          escreval("Embraer Legacy 650 - ", "1000 R$")
-                          senao escreval("opção inválida - ", "1000 R$")
                           fimse
             limpartela()
                             
@@ -180,7 +194,7 @@ caso 3
                           escolha optbuy//opcao compras
                           
                           caso 1
-                          se ( optbuy = 1) entao //1-comprar
+                          se ( optbuy = 1) entao //comprar
                           escreval("Voce escolheu Comprar")
             limpartela()
                           escreval("Biz- ", "1000 R$")
