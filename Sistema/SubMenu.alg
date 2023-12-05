@@ -5,7 +5,7 @@ algoritmo "Submenu"
 // Autor(a)    : Daniel Lucas Patrício de Carvalho
 // Data atual  : DATA_ATUAL/MES_ATUAL/ANO_ATUAL
 var
-opt,opt1,optvalue,optbuy,optcd: inteiro
+opt,opt1,optvalue,optbuy,optcd,optbuy2: inteiro
 teste: caractere
 
 funcao limpartela(): caractere
@@ -208,32 +208,44 @@ caso 3
                                      caso 1
                                         se ( optcd = 1) entao 
                                           escreval("Carros Luxo")
-                                          escreval("1 - Mercedes-AMG GT")
-                                          escreval("2 - BMW 8 Series")
-                                          escreval("3 - BMW i8")
-                                          escreval("4 - AudiA8")
-                                          escreval("5 - Audi R8")
-                                          escreval("6 - Lexus LC")
-                                          escreval("7 - Lexus RX ")
-                                          escreval("8 - Jaguar XJ")
-                                          escreval("9 - Ferrari 812")
-                                          escreval("10 - Ferrari F8 Tributo")
+                                          (".")
+                                          escreval("a - Mercedes-AMG GT")
+                                          escreval("b - BMW 8 Series")
+                                          escreval("c - BMW i8")
+                                          escreval("d - AudiA8")
+                                          escreval("e - Audi R8")
+                                          escreval("f - Lexus LC")
+                                          escreval("g - Lexus RX ")
+                                          escreval("h - Jaguar XJ")
+                                          escreval("i - Ferrari 812")
+                                          escreval("j - Ferrari F8 Tributo")
                                           senao escreval("opção inválida")
                                           fimse
-limpartela()
+limpartela() 
+                                               leia(optbuy2)
+                                                        escolha optbuy2
+                                                                     caso 1
+                                                                      se (optbuy2 = 1) entao 
+                                                                        escreval("Você efetuou a compra")
+                                                                        senao escreval("opção inválida")
+                                                                      fimse
+                                                                      fimescolha
+                limpartela() 
+
                                            caso 2 
                                         se ( optcd = 2) entao 
                                          escreval("Motocicletas Luxo")
-                                         escreval("1 - Ducati Panigale V4")
-                                         escreval("2 - BMW S 1000 RR")
-                                         escreval("3 - BMW R 1250 GS")
-                                         escreval("4 - Harley-Davidson CVO Limited")
-                                         escreval("5 - Harley-Davidson LiveWire")
-                                         escreval("6 - Yamaha MT")
-                                         escreval("7 - Yamaha MT-09")
-                                         escreval("8 - Indian Roadmaster")
-                                         escreval("9 - Triumph Rocket 3")
-                                         escreval("10 - Ferrari F8 Tributo")
+                                         (".")
+                                         escreval("a - Ducati Panigale V4")
+                                         escreval("b - BMW S 1000 RR")
+                                         escreval("c - BMW R 1250 GS")
+                                         escreval("d - Harley-Davidson CVO Limited")
+                                         escreval("e - Harley-Davidson LiveWire")
+                                         escreval("f - Yamaha MT")
+                                         escreval("g - Yamaha MT-09")
+                                         escreval("h - Indian Roadmaster")
+                                         escreval("i - Triumph Rocket 3")
+                                         escreval("j - Ferrari F8 Tributo")
                                          senao escreval("opção inválida")
                                         fimse
             limpartela()
