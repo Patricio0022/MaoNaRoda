@@ -66,7 +66,8 @@ escreval("║ 3- Compras de Automóveis      ║")
 escreval("║_______________________________║")
 escreval("║ 4- Alguma coisa               ║")
 escreval("║_______________________________║")
-escreval("║ 6- Voltar ao Menu Principal   ║")
+escreval("║ 6- Voltar ao Menu Principal   ║")6
+
 escreval("║                               ║")
 escreval("╚═══════════════════════════════╝")
 
