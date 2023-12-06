@@ -562,7 +562,7 @@ fimse
                                                                                                             caso 2
                                                                                                                 escreval("Você escolheu o BMW 8 Series.")
                                                                                                                 escreval("Digite a taxa de juros:")
-                                                                                                                leia(juros)
+                                                                                                         leia(juros)
                                                                                                                 valorFinal := 80000 + (80000 * juros / 100)
                                                                                                                 escreval("O valor final com juros é de: R$", valorFinal)
                                                                                                             // Add casos para os outros modelos de carros
