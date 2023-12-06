@@ -5,15 +5,13 @@ algoritmo "Submenu"
 // Autor(a)    : Daniel Lucas Patrício de Carvalho
 // Data atual  : DATA_ATUAL/MES_ATUAL/ANO_ATUAL
 var
-opt,opt1,optvalue: inteiro
+opt,opt1,optvalue,optbuy,optcd,optbuy2,optbuy3,diasAluguel,valorAluguel: inteiro
 teste: caractere
 
 funcao limpartela(): caractere
 		var
 
 		inicio
-			escreval("            		algo           .")
-			escreval("             			             .")
 			escreval("            			             .")
 			escreval("             			             .")
 			escreval("            			             .")
@@ -33,7 +31,8 @@ funcao limpartela(): caractere
 			escreval("            			             .")
 			escreval("             			             .")
 			escreval("            			             .")
-      escreval("       ")
+			escreval("             			             .")
+			escreval("            			             .")
   	fimfuncao
 
 
@@ -55,11 +54,20 @@ repita
 
 
 
-escreval("1:","Veículos e Modelos")// veiculos e tipos de veiculos
-escreval("2:","Valores")
-escreval("3:","Comprar")
-escreval("4:","Alugar")
-escreval("6:","Voltar ao Menu Principal")
+escreval("╔═══════════════════════════════╗")
+escreval("║       Escolha uma opção       ║")
+escreval("╠══════════════════════════════ ╣")
+escreval("║ 1- Veículos e Modelos         ║") //veiculos e tipos de veiculos
+escreval("║_______________________________║")
+escreval("║ 2- Valores                    ║")
+escreval("║_______________________________║")
+escreval("║ 3- Compras de Automóveis      ║")
+escreval("║_______________________________║")
+escreval("║ 4- Alguma coisa               ║")
+escreval("║_______________________________║")
+escreval("║ 6- Voltar ao Menu Principal   ║")
+escreval("║                               ║")
+escreval("╚═══════════════════════════════╝")
 
 limpartela()
 
@@ -461,6 +469,18 @@ fimse
                                                                                         fimescolha // optbuy2
 
 
+                                    caso 2
+                                        escreval("Motocicletas luxo")
+                                        escreval("1 - Ducati Panigale V4")
+                                        escreval("2 - BMW S 1000 RR")
+                                        escreval("3 - BMW R 1250 GS")
+                                        escreval("4 - Harley-Davidson CVO Limited")
+                                        escreval("5 - Harley-Davidson LiveWire")
+                                        escreval("6 - Yamaha MT-10")
+                                        escreval("7 - Yamaha MT-09")
+                                        escreval("8 - Indian Roadmaster")
+                                        escreval("9 - Triumph Rocket 3")
+                                        escreval("10 - MV Agusta Rush 1000")
 
                                                                                     leia(optbuy3)
                                                                                     escolha optbuy3
@@ -475,55 +495,7 @@ fimse
                                                                                     fimescolha // optbuy3
                                                                             fimescolha // optcd
 
-          senao escreval("opção inválida")
-      fimse
-    
-       
-       
-       
-
-
-                                                    leia(optcd)
-                                                    escolha optcd
-                                                                    caso 1
-                                                                        se (optcd = 1) entao
-                                                                            escreval("Carros Luxo")
-                                                                            escreval("1 - Mercedes-AMG GT")
-                                                                            escreval("2 - BMW 8 Series")
-                                                                            escreval("3 - BMW i8")
-                                                                            escreval("4 - AudiA8")
-                                                                            escreval("5 - Audi R8")
-                                                                            escreval("6 - Lexus LC")
-                                                                            escreval("7 - Lexus RX ")
-                                                                            escreval("8 - Jaguar XJ")
-                                                                            escreval("9 - Ferrari 812")
-                                                                            escreval("10 - Ferrari F8 Tributo")
-                                                                        senao escreval("opção inválida")
-                                                                        fimse
-      
-                                                    leia(optcd)
-                                                    escolha optcd
-                                                                    caso 1
-                                                                        se (optcd = 1) entao
-                                                                            escreval("Carros Luxo")
-                                                                            escreval("1 - Mercedes-AMG GT")
-                                                                            escreval("2 - BMW 8 Series")
-                                                                            escreval("3 - BMW i8")
-                                                                            escreval("4 - AudiA8")
-                                                                            escreval("5 - Audi R8")
-                                                                            escreval("6 - Lexus LC")
-                                                                            escreval("7 - Lexus RX ")
-                                                                            escreval("8 - Jaguar XJ")
-                                                                            escreval("9 - Ferrari 812")
-                                                                            escreval("10 - Ferrari F8 Tributo")
-                                                                        senao escreval("opção inválida")
-                                                                        fimse
-
-
-
-       
-         
-         
+                           
 
 
                                                         caso 5
@@ -562,7 +534,7 @@ fimse
                                                                                                             caso 2
                                                                                                                 escreval("Você escolheu o BMW 8 Series.")
                                                                                                                 escreval("Digite a taxa de juros:")
-                                                                                                         leia(juros)
+                                                                                                                leia(juros)
                                                                                                                 valorFinal := 80000 + (80000 * juros / 100)
                                                                                                                 escreval("O valor final com juros é de: R$", valorFinal)
                                                                                                             // Add casos para os outros modelos de carros
@@ -603,15 +575,11 @@ fimse
 
 
 
-<<<<<<< HEAD
-fimescolha
-=======
 
                             fimescolha//optbuy
  
 
 fimescolha//opt
->>>>>>> 9e1f2d86b1ee686f785dcee5bde8d56461a894be
 
 ate ( opt = 6)
 fimalgoritmo
