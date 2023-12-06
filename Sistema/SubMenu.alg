@@ -531,22 +531,37 @@ caso 10
                           
                            
                         fimescolha // optbuy3
-                fimescolha // optcd
-        
-                       
+                fimescolha // optcd                     
 fimse
             limpartela()
+
+
                           caso 3
                           se ( optbuy = 3) entao//parcelas
                           escreval("Voce escolheu Parcelas")
-            limpartela()
-                          escreval("1000 R$")
-                          escreval("1000 R$")
-                          escreval("1000 R$")
                           senao escreval("opção inválida - ")
                           fimse
-
-                        caso 4
+                              
+                              leia(optcd)
+                                  escolha optcd
+                                      caso 1
+                                          se (optcd = 1) entao
+                                              escreval("Carros Luxo")
+                                              escreval("1 - Mercedes-AMG GT")
+                                              escreval("2 - BMW 8 Series")
+                                              escreval("3 - BMW i8")
+                                              escreval("4 - AudiA8")
+                                              escreval("5 - Audi R8")
+                                              escreval("6 - Lexus LC")
+                                              escreval("7 - Lexus RX ")
+                                              escreval("8 - Jaguar XJ")
+                                              escreval("9 - Ferrari 812")
+                                              escreval("10 - Ferrari F8 Tributo")
+                                          senao escreval("opção inválida")
+                                          fimse
+                                           
+                                        
+caso 4
                         se (optbuy = 4) entao // Descontos
                         escreval("Você escolheu Descontos")
                         escreval("--------------------------------------")
@@ -558,98 +573,78 @@ fimse
                         senao escreval("opção inválida - ")
                         fimse
 
-                            
-                            leia(optcd)
-                                escolha optcd
-                                    caso 1
-                                        se (optcd = 1) entao
-                                            escreval("Carros Luxo")
-                                            escreval("1 - Mercedes-AMG GT")
-                                            escreval("2 - BMW 8 Series")
-                                            escreval("3 - BMW i8")
-                                            escreval("4 - AudiA8")
-                                            escreval("5 - Audi R8")
-                                            escreval("6 - Lexus LC")
-                                            escreval("7 - Lexus RX ")
-                                            escreval("8 - Jaguar XJ")
-                                            escreval("9 - Ferrari 812")
-                                            escreval("10 - Ferrari F8 Tributo")
-                                        senao escreval("opção inválida")
-                                        fimse
-                                        
+                    leia(optbuy2)
+                    escolha optbuy2
 
-leia(optbuy2)
-escolha optbuy2
+                    caso 1 
+                    escreval("Você escolheu o Mercedes-AMG GT.")
+                    escreval("Digite o valor do desconto:")
+                    leia(desconto)
+                    valorFinal := 250000 - desconto
+                    escreval("O valor final com desconto é de: R$", valorFinal)
 
-caso 1 
-escreval("Você escolheu o Mercedes-AMG GT.")
-escreval("Digite o valor do desconto:")
-leia(desconto)
-valorFinal := 250000 - desconto
-escreval("O valor final com desconto é de: R$", valorFinal)
+                    caso 2
+                    escreval("Você escolheu a BMW 8 Series.")
+                    escreval("Digite o valor do desconto:")
+                    leia(desconto)
+                    valorFinal := 800000 - desconto
+                    escreval("O valor final com desconto é de: R$", valorFinal)
 
-caso 2
-escreval("Você escolheu a BMW 8 Series.")
-escreval("Digite o valor do desconto:")
-leia(desconto)
-valorFinal := 800000 - desconto
-escreval("O valor final com desconto é de: R$", valorFinal)
+                    caso 3
+                    escreval("Você escolheu a BMW i8.")
+                    escreval("Digite o valor do desconto:")
+                    leia(desconto)
+                    valorFinal := 710500 - desconto
+                    escreval("O valor final com desconto é de: R$", valorFinal)
 
-caso 3
-escreval("Você escolheu a BMW i8.")
-escreval("Digite o valor do desconto:")
-leia(desconto)
-valorFinal := 710500 - desconto
-escreval("O valor final com desconto é de: R$", valorFinal)
+                    caso 4
+                    escreval("Você escolheu a Audi A8.")
+                    escreval("Digite o valor do desconto:")
+                    leia(desconto)
+                    valorFinal := 464000 - desconto
+                    escreval("O valor final com desconto é de: R$", valorFinal)
 
-caso 4
-escreval("Você escolheu a Audi A8.")
-escreval("Digite o valor do desconto:")
-leia(desconto)
-valorFinal := 464000 - desconto
-escreval("O valor final com desconto é de: R$", valorFinal)
+                    caso 5
+                    escreval("Você escolheu a Audi R8.")
+                    escreval("Digite o valor do desconto:")
+                    leia(desconto)
+                    valorFinal := 1160000 - desconto
+                    escreval("O valor final com desconto é de: R$", valorFinal)
 
-caso 5
-escreval("Você escolheu a Audi R8.")
-escreval("Digite o valor do desconto:")
-leia(desconto)
-valorFinal := 1160000 - desconto
-escreval("O valor final com desconto é de: R$", valorFinal)
+                    caso 6
+                    escreval("Você escolheu a Lexus LC.")
+                    escreval("Digite o valor do desconto:")
+                    leia(desconto)
+                    valorFinal := 127900000 - desconto
+                    escreval("O valor final com desconto é de: R$", valorFinal)
 
-caso 6
-escreval("Você escolheu a Lexus LC.")
-escreval("Digite o valor do desconto:")
-leia(desconto)
-valorFinal := 127900000 - desconto
-escreval("O valor final com desconto é de: R$", valorFinal)
+                    caso 7
+                    escreval("Você escolheu a Lexus LC.")
+                    escreval("Digite o valor do desconto:")
+                    leia(desconto)
+                    valorFinal := 525000 - desconto
+                    escreval("O valor final com desconto é de: R$", valorFinal)
 
-caso 7
-escreval("Você escolheu a Lexus LC.")
-escreval("Digite o valor do desconto:")
-leia(desconto)
-valorFinal := 525000 - desconto
-escreval("O valor final com desconto é de: R$", valorFinal)
+                    caso 8
+                    escreval("Você escolheu a Lexus LC.")
+                    escreval("Digite o valor do desconto:")
+                    leia(desconto)
+                    valorFinal := 250000 - desconto
+                    escreval("O valor final com desconto é de: R$", valorFinal)
 
-caso 8
-escreval("Você escolheu a Lexus LC.")
-escreval("Digite o valor do desconto:")
-leia(desconto)
-valorFinal := 250000 - desconto
-escreval("O valor final com desconto é de: R$", valorFinal)
+                    caso 9
+                    escreval("Você escolheu a Lexus LC.")
+                    escreval("Digite o valor do desconto:")
+                    leia(desconto)
+                    valorFinal := 3950000 - desconto
+                    escreval("O valor final com desconto é de: R$", valorFinal)
 
-caso 9
-escreval("Você escolheu a Lexus LC.")
-escreval("Digite o valor do desconto:")
-leia(desconto)
-valorFinal := 3950000 - desconto
-escreval("O valor final com desconto é de: R$", valorFinal)
-
-caso 10
-escreval("Você escolheu a Lexus LC.")
-escreval("Digite o valor do desconto:")
-leia(desconto)
-valorFinal := 4000000 - desconto
-escreval("O valor final com desconto é de: R$", valorFinal)
+                    caso 10
+                    escreval("Você escolheu a Lexus LC.")
+                    escreval("Digite o valor do desconto:")
+                    leia(desconto)
+                    valorFinal := 4000000 - desconto
+                    escreval("O valor final com desconto é de: R$", valorFinal)
 
 
 
@@ -803,9 +798,65 @@ leia(juros)
 valorFinal := 80000 + (80000 * juros / 100)
 escreval("O valor final com juros é de: R$", valorFinal)
 
-// Add casos para os outros modelos de carros
-outro caso
-escreval("Opção inválida.")
+caso 3
+escreval("Você escolheu o BMW i8.")
+escreval("Digite a taxa de juros:")
+leia(juros)
+valorFinal := 710500 + (710500 * juros / 100)
+escreval("O valor final com juros é de: R$", valorFinal)
+
+caso 4
+escreval("Você escolheu o Audi A8.")
+escreval("Digite a taxa de juros:")
+leia(juros)
+valorFinal := 464000 + (464000 * juros / 100)
+escreval("O valor final com juros é de: R$", valorFinal)
+
+caso 5
+escreval("Você escolheu o Audi R8 .")
+escreval("Digite a taxa de juros:")
+leia(juros)
+valorFinal := 1160000 + (1160000 * juros / 100)
+escreval("O valor final com juros é de: R$", valorFinal)
+
+caso 6
+escreval("Você escolheu o Lexus LC .")
+escreval("Digite a taxa de juros:")
+leia(juros)
+valorFinal := 127900000 + (127900000 * juros / 100)
+escreval("O valor final com juros é de: R$", valorFinal)
+
+caso 7
+escreval("Você escolheu o Lexus RX .")
+escreval("Digite a taxa de juros:")
+leia(juros)
+valorFinal := 525000 + (525000 * juros / 100)
+escreval("O valor final com juros é de: R$", valorFinal)
+
+caso 8
+escreval("Você escolheu o Jaguar XJ .")
+escreval("Digite a taxa de juros:")
+leia(juros)
+valorFinal := 250000 + (250000 * juros / 100)
+escreval("O valor final com juros é de: R$", valorFinal)
+
+caso 9
+escreval("Você escolheu a Ferrari 812 .")
+escreval("Digite a taxa de juros:")
+leia(juros)
+valorFinal := 3950000 + (3950000 * juros / 100)
+escreval("O valor final com juros é de: R$", valorFinal)
+
+caso 10
+escreval("Você escolheu a Ferrari F8 Tributo .")
+escreval("Digite a taxa de juros:")
+leia(juros)
+valorFinal := 4000000 + (4000000 * juros / 100)
+escreval("O valor final com juros é de: R$", valorFinal)
+
+
+
+
 fimescolha // optbuy2
 
 caso 2
@@ -823,16 +874,76 @@ escreval("10 - MV Agusta Rush 1000")
 
 leia(optbuy3)
 escolha optbuy3
-caso 1
+
+caso 1 
 escreval("Você escolheu a Ducati Panigale V4.")
 escreval("Digite a taxa de juros:")
 leia(juros)
-valorFinal := 160000 + (160000 * juros / 100)
+valorFinal := 162000 + (162000 * juros / 100)
 escreval("O valor final com juros é de: R$", valorFinal)
-// Add casos para os outros modelos de motos
-outro caso
-("Opção inválida.")
 
+caso 2
+escreval("Você escolheu o BMW S 1000 RR.")
+escreval("Digite a taxa de juros:")
+leia(juros)
+valorFinal := 125000 + (125000 * juros / 100)
+escreval("O valor final com juros é de: R$", valorFinal)
+
+caso 3
+escreval("Você escolheu o BMW R 1250 GS.")
+escreval("Digite a taxa de juros:")
+leia(juros)
+valorFinal := 130000 + (130000 * juros / 100)
+escreval("O valor final com juros é de: R$", valorFinal)
+
+caso 4
+escreval("Você escolheu o Harley-Davidson CVO Limited.")
+escreval("Digite a taxa de juros:")
+leia(juros)
+valorFinal := 110000 + (110000 * juros / 100)
+escreval("O valor final com juros é de: R$", valorFinal)
+
+caso 5
+escreval("Você escolheu o Harley-Davidson LiveWire .")
+escreval("Digite a taxa de juros:")
+leia(juros)
+valorFinal := 400000 + (400000 * juros / 100)
+escreval("O valor final com juros é de: R$", valorFinal)
+
+caso 6
+escreval("Você escolheu o Yamaha MT-10 .")
+escreval("Digite a taxa de juros:")
+leia(juros)
+valorFinal := 110000+ (110000 * juros / 100)
+escreval("O valor final com juros é de: R$", valorFinal)
+
+caso 7
+escreval("Você escolheu o Yamaha MT-09 .")
+escreval("Digite a taxa de juros:")
+leia(juros)
+valorFinal := 60000 + (60000 * juros / 100)
+escreval("O valor final com juros é de: R$", valorFinal)
+
+caso 8
+escreval("Você escolheu o Indian Roadmaster .")
+escreval("Digite a taxa de juros:")
+leia(juros)
+valorFinal := 100000 + (100000 * juros / 100)
+escreval("O valor final com juros é de: R$", valorFinal)
+
+caso 9
+escreval("Você escolheu o Triumph Rocket 3  .")
+escreval("Digite a taxa de juros:")
+leia(juros)
+valorFinal := 130000 + (130000 * juros / 100)
+escreval("O valor final com juros é de: R$", valorFinal)
+
+caso 10
+escreval("Você escolheu o MV Agusta Rush 1000 .")
+escreval("Digite a taxa de juros:")
+leia(juros)
+valorFinal := 619990 + (619990 * juros / 100)
+escreval("O valor final com juros é de: R$", valorFinal)
 
 fimescolha // optbuy3
 fimescolha // optcd
