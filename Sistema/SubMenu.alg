@@ -7,6 +7,8 @@ algoritmo "Submenu"
 var
 opt,opt1,optvalue,optbuy,optcd,optbuy2,optbuy3,diasAluguel,valorAluguel: inteiro
 desconto,valorFinal,juros: inteiro
+valorFinanciado, taxaJuros, valorParcela, taxaMensal: real
+numParcelas, contador: inteiro
 
 
 funcao limpartela(): caractere
@@ -554,31 +556,28 @@ fimse
     caso 3
     se ( optbuy = 3) entao//parcelas
     escreval("Voce escolheu Parcelas")
-    senao escreval("opção inválida - ")
+
+        escreval("Digite o valor financiado: R$ ")
+        leia(valorFinanciado)
+            escreval("--------------------------------------")
+
+            escreval("Digite a taxa de juros ao ano (%): ")
+            leia(taxaJuros)
+            escreval("--------------------------------------")
+
+                escreval("Digite o número de parcelas: ")
+                escreval("--------------------------------------")
+
+                    leia(numParcelas)
+
+                 taxaMensal := 1 + taxaJuros / 100 / 12
+    valorParcela := valorFinanciado * (taxaJuros / 100 / 12) * ((taxaMensal)^numParcelas) / (((taxaMensal)^numParcelas) - 1)
+
+            escreval("O valor da parcela mensal é de: R$", valorParcela:0:2)
+            escreval("--------------------------------------")
+
+    senao escreval("opção inválida - ") 
     fimse
-                              
-                              leia(optcd)
-                                  escolha optcd
-                                      caso 1
-                                          se (optcd = 1) entao
-                                          escreval("╔════════════════════════════════════════════════╗")
-                                          escreval("║             Escolha seu Carro de Luxo          ║")
-                                          escreval("║                                                ║")
-                                          escreval("║ 1 - Mercedes-AMG GT                            ║")
-                                          escreval("║ 2 - BMW 8 Series                               ║")
-                                          escreval("║ 3 - BMW i8                                     ║")
-                                          escreval("║ 4 - Audi A8                                    ║")
-                                          escreval("║ 5 - Audi R8                                    ║")
-                                          escreval("║ 6 - Lexus LC                                   ║")
-                                          escreval("║ 7 - Lexus RX                                   ║")
-                                          escreval("║ 8 - Jaguar XJ                                  ║")
-                                          escreval("║ 9 - Ferrari 812                                ║")
-                                          escreval("║10 - Ferrari F8 Tributo                         ║")
-                                          escreval("║                                                ║")
-                                          escreval("╚════════════════════════════════════════════════╝")
-                                          senao escreval("opção inválida")
-                                          fimse
-                                          fimescolha // optcd falta motos e etc
                                            
                                         
     caso 4
