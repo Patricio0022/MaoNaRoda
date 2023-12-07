@@ -8,7 +8,7 @@ var
 opt,opt1,optvalue,optbuy,optcd,optbuy2,optbuy3,diasAluguel,valorAluguel: inteiro
 desconto,valorFinal,juros: inteiro
 valorFinanciado, taxaJuros, valorParcela, taxaMensal: real
-numParcelas, contador: inteiro
+numParcelas, contador, aprovacao, optCompra2: inteiro
 
 
 funcao limpartela(): caractere
@@ -66,9 +66,9 @@ escreval("║ 2- Valores                    ║")
 escreval("║_______________________________║")
 escreval("║ 3- Compras de Automóveis      ║")
 escreval("║_______________________________║")
-escreval("║ 4- Alguma coisa               ║")
+escreval("║ 4- Orçamentos                 ║")
 escreval("║_______________________________║")
-escreval("║ 6- Voltar ao Menu Principal   ║")
+escreval("║ 5- Voltar ao Menu Principal   ║")
 escreval("║                               ║")
 escreval("╚═══════════════════════════════╝")
 
@@ -81,7 +81,7 @@ limpartela()
 
     caso 1
       se ( opt = 1) entao
-        escreval("Você escolheu a opção Veículos")//opçao 1 de opt
+        escreval("Você escolheu a opção Veículos e Modelos")//opçao 1 de opt
         senao escreval("opção inválida")
       fimse
 limpartela()  
@@ -907,21 +907,21 @@ escreval("O valor final com juros é de: R$", valorFinal)
 fimescolha // optbuy2
 
 caso 2
-                          escreval("╔════════════════════════════════════════════════╗")
-                          escreval("║          Motocicleta de Luxo                   ║")
-                          escreval("║                                                ║")
-                          escreval("║ 1 - Ducati Panigale V4                         ║")
-                          escreval("║ 2 - BMW S 1000 RR                              ║")
-                          escreval("║ 3 - BMW R 1250 GS                              ║")
-                          escreval("║ 4 - Harley-Davidson CVO Limited                ║")
-                          escreval("║ 5 - Harley-Davidson LiveWire                   ║")
-                          escreval("║ 6 - Yamaha MT-10                               ║")
-                          escreval("║ 7 - Yamaha MT-09                               ║")
-                          escreval("║ 8 - Indian Roadmaster                          ║")
-                          escreval("║ 9 - Triumph Rocket 3                           ║")
-                          escreval("║10 - MV Agusta Rush 1000                        ║")
-                          escreval("║                                                ║")
-                          escreval("╚════════════════════════════════════════════════╝")
+                escreval("╔════════════════════════════════════════════════╗")
+                escreval("║          Motocicleta de Luxo                   ║")
+                escreval("║                                                ║")
+                escreval("║ 1 - Ducati Panigale V4                         ║")
+                escreval("║ 2 - BMW S 1000 RR                              ║")
+                escreval("║ 3 - BMW R 1250 GS                              ║")
+                escreval("║ 4 - Harley-Davidson CVO Limited                ║")
+                escreval("║ 5 - Harley-Davidson LiveWire                   ║")
+                escreval("║ 6 - Yamaha MT-10                               ║")
+                escreval("║ 7 - Yamaha MT-09                               ║")
+                escreval("║ 8 - Indian Roadmaster                          ║")
+                escreval("║ 9 - Triumph Rocket 3                           ║")
+                escreval("║10 - MV Agusta Rush 1000                        ║")
+                escreval("║                                                ║")
+                escreval("╚════════════════════════════════════════════════╝")
 
 
 
@@ -1006,7 +1006,434 @@ fimescolha // optcd
 fimescolha//optbuy
 
 
-fimescolha//opt
 
-ate ( opt = 6)
+
+
+
+
+
+
+
+
+
+
+
+
+caso 4
+      se ( opt = 4) entao
+        escreval("Você escolheu a opção Orçamentos ")//opçao 4 de opt
+        senao escreval("opção inválida")
+      fimse
+ 
+
+            escreval("╔══════════════════════════════════════════════════╗")
+            escreval("║       Escolha uma opção                          ║")
+            escreval("╠══════════════════════════════════════════════════╣")
+            escreval("║ 1- Simulação de aluguel de Carros de luxo        ║")
+            escreval("║ 2- Simulação de aluguel de Motocicletas de luxo  ║")
+            escreval("╚══════════════════════════════════════════════════╝")
+                  
+            leia(optcd)
+                        escolha optcd//simular carros
+
+                        caso 1
+            se (optcd = 1) entao
+                escreval("╔════════════════════════════════════════════════╗")
+                escreval("║              Carro de Luxo                     ║")
+                escreval("║                                                ║")
+                escreval("║ 1 - Mercedes-AMG GT                            ║")
+                escreval("║ 2 - BMW 8 Series                               ║")
+                escreval("║ 3 - BMW i8                                     ║")
+                escreval("║ 4 - Audi A8                                    ║")
+                escreval("║ 5 - Audi R8                                    ║")
+                escreval("║ 6 - Lexus LC                                   ║")
+                escreval("║ 7 - Lexus RX                                   ║")
+                escreval("║ 8 - Jaguar XJ                                  ║")
+                escreval("║ 9 - Ferrari 812                                ║")
+                escreval("║10 - Ferrari F8 Tributo                         ║")
+                escreval("║                                                ║")
+                escreval("╚════════════════════════════════════════════════╝")
+            senao escreval("opção inválida")
+            fimse
+
+                    leia(optCompra2)
+                        escolha optCompra2
+
+                        caso 1
+                        escreval("Você escolheu a Mercedes-AMG GT para alugar.")
+                        escreval("Por quantos dias você deseja alugar?")
+                        leia(diasAluguel)
+                        valorAluguel := diasAluguel * 1000
+                        escreval("O custo total do aluguel é de: R$", valorAluguel)
+
+                            escreval("Deseja aprovar a simulação do aluguel? (1 - Sim, 2 - Não)")
+                            leia(aprovacao)
+                                se (aprovacao = 1) entao
+                                escreval("Simulação aprovada! Agende um atendimento com um de nossos atendentes.")
+                                // ... (código para agendar)
+                                senao
+                                escreval("Simulação não aprovada. Obrigado pela visita!")
+                                fimse
+
+          caso 2
+          escreval("Você escolheu a BMW 8 Series para alugar.")
+          escreval("Por quantos dias você deseja alugar?")
+          leia(diasAluguel)
+          valorAluguel := diasAluguel * 1000
+          escreval("O custo total do aluguel é de: R$", valorAluguel)
+
+          escreval("O custo total do aluguel é de: R$", valorAluguel)
+            escreva("Deseja aprovar a simulação do aluguel? (1 - Sim, 2 - Não)")
+            leia(aprovacao)
+                se (aprovacao = 1) entao
+                escreval("Simulação aprovada! Agende um atendimento com um de nossos atendentes.")
+                // ... (código para agendar)
+                senao
+                escreval("Simulação não aprovada. Obrigado pela visita!")
+                fimse
+
+          caso 3
+
+          escreval("Você escolheu a BMW i8 para alugar.")
+          escreval("Por quantos dias você deseja alugar?")
+          leia(diasAluguel)
+          valorAluguel := diasAluguel * 1000
+          escreval("O custo total do aluguel é de: R$", valorAluguel)
+
+          escreval("O custo total do aluguel é de: R$", valorAluguel)
+            escreva("Deseja aprovar a simulação do aluguel? (1 - Sim, 2 - Não)")
+            leia(aprovacao)
+                se (aprovacao = 1) entao
+                escreval("Simulação aprovada! Agende um atendimento com um de nossos atendentes.")
+                // ... (código para agendar)
+                senao
+                escreval("Simulação não aprovada. Obrigado pela visita!")
+                fimse
+
+         caso 4
+
+              
+          escreval("Você escolheu o AudiA8 para alugar.")
+          escreval("Por quantos dias você deseja alugar?")
+          leia(diasAluguel)
+          valorAluguel := diasAluguel * 1000
+          escreval("O custo total do aluguel é de: R$", valorAluguel)
+
+          escreval("O custo total do aluguel é de: R$", valorAluguel)
+            escreva("Deseja aprovar a simulação do aluguel? (1 - Sim, 2 - Não)")
+            leia(aprovacao)
+                se (aprovacao = 1) entao
+                escreval("Simulação aprovada! Agende um atendimento com um de nossos atendentes.")
+                // ... (código para agendar)
+                senao
+                escreval("Simulação não aprovada. Obrigado pela visita!")
+                fimse
+
+           caso 5
+
+          escreval("Você escolheu o Audi R8 para alugar.")
+          escreval("Por quantos dias você deseja alugar?")
+          leia(diasAluguel)
+          valorAluguel := diasAluguel * 1000
+          escreval("O custo total do aluguel é de: R$", valorAluguel)
+
+            escreval("O custo total do aluguel é de: R$", valorAluguel)
+            escreva("Deseja aprovar a simulação do aluguel? (1 - Sim, 2 - Não)")
+            leia(aprovacao)
+                se (aprovacao = 1) entao
+                escreval("Simulação aprovada! Agende um atendimento com um de nossos atendentes.")
+                // ... (código para agendar)
+                senao
+                escreval("Simulação não aprovada. Obrigado pela visita!")
+                fimse
+
+            caso 6
+
+          escreval("Você escolheu o Lexus LC para alugar.")
+          escreval("Por quantos dias você deseja alugar?")
+          leia(diasAluguel)
+          valorAluguel := diasAluguel * 1000
+          escreval("O custo total do aluguel é de: R$", valorAluguel)
+
+                      escreval("O custo total do aluguel é de: R$", valorAluguel)
+            escreva("Deseja aprovar a simulação do aluguel? (1 - Sim, 2 - Não)")
+            leia(aprovacao)
+                se (aprovacao = 1) entao
+                escreval("Simulação aprovada! Agende um atendimento com um de nossos atendentes.")
+                // ... (código para agendar)
+                senao
+                escreval("Simulação não aprovada. Obrigado pela visita!")
+                fimse
+
+            caso 7 
+
+          escreval("Você escolheu o Lexus RX para alugar.")
+          escreval("Por quantos dias você deseja alugar?")
+          leia(diasAluguel)
+          valorAluguel := diasAluguel * 1000
+          escreval("O custo total do aluguel é de: R$", valorAluguel)
+
+              escreval("O custo total do aluguel é de: R$", valorAluguel)
+            escreva("Deseja aprovar a simulação do aluguel? (1 - Sim, 2 - Não)")
+            leia(aprovacao)
+                se (aprovacao = 1) entao
+                escreval("Simulação aprovada! Agende um atendimento com um de nossos atendentes.")
+                // ... (código para agendar)
+                senao
+                escreval("Simulação não aprovada. Obrigado pela visita!")
+                fimse
+
+            caso 8 
+
+          escreval("Você escolheu o Jaguar XJ para alugar.")
+          escreval("Por quantos dias você deseja alugar?")
+          leia(diasAluguel)
+          valorAluguel := diasAluguel * 1000
+          escreval("O custo total do aluguel é de: R$", valorAluguel)
+
+                        escreval("O custo total do aluguel é de: R$", valorAluguel)
+            escreva("Deseja aprovar a simulação do aluguel? (1 - Sim, 2 - Não)")
+            leia(aprovacao)
+                se (aprovacao = 1) entao
+                escreval("Simulação aprovada! Agende um atendimento com um de nossos atendentes.")
+                // ... (código para agendar)
+                senao
+                escreval("Simulação não aprovada. Obrigado pela visita!")
+                fimse
+
+        caso 9
+          escreval("Você escolheu a Ferrari 812 para alugar.")
+          escreval("Por quantos dias você deseja alugar?")
+          leia(diasAluguel)
+          valorAluguel := diasAluguel * 1000
+          escreval("O custo total do aluguel é de: R$", valorAluguel)
+
+                                  escreval("O custo total do aluguel é de: R$", valorAluguel)
+            escreva("Deseja aprovar a simulação do aluguel? (1 - Sim, 2 - Não)")
+            leia(aprovacao)
+                se (aprovacao = 1) entao
+                escreval("Simulação aprovada! Agende um atendimento com um de nossos atendentes.")
+                // ... (código para agendar)
+                senao
+                escreval("Simulação não aprovada. Obrigado pela visita!")
+                fimse
+
+        caso 10
+                  escreval("Você escolheu a Ferrari F8 Tributo para alugar.")
+          escreval("Por quantos dias você deseja alugar?")
+          leia(diasAluguel)
+          valorAluguel := diasAluguel * 1000
+          escreval("O custo total do aluguel é de: R$", valorAluguel)
+
+            escreval("O custo total do aluguel é de: R$", valorAluguel)
+            escreva("Deseja aprovar a simulação do aluguel? (1 - Sim, 2 - Não)")
+            leia(aprovacao)
+                se (aprovacao = 1) entao
+                escreval("Simulação aprovada! Agende um atendimento com um de nossos atendentes.")
+                // ... (código para agendar)
+                senao
+                escreval("Simulação não aprovada. Obrigado pela visita!")
+                fimse
+
+
+
+
+                        fimescolha // optCompra2
+
+
+
+                        
+                caso 2
+            se (optcd = 2) entao
+                escreval("╔════════════════════════════════════════════════╗")
+                escreval("║             Escolha sua Motocicleta de Luxo    ║")
+                escreval("║                                                ║")
+                escreval("║ 1 - Ducati Panigale V4                         ║")
+                escreval("║ 2 - BMW S 1000 RR                              ║")
+                escreval("║ 3 - BMW R 1250 GS                              ║")
+                escreval("║ 4 - Harley-Davidson CVO Limited                ║")
+                escreval("║ 5 - Harley-Davidson LiveWire                   ║")
+                escreval("║ 6 - Yamaha MT-10                               ║")
+                escreval("║ 7 - Yamaha MT-09                               ║")
+                escreval("║ 8 - Indian Roadmaster                          ║")
+                escreval("║ 9 - Triumph Rocket 3                           ║")
+                escreval("║10 - MV Agusta Rush 1000                        ║")
+                escreval("║                                                ║")
+                escreval("╚════════════════════════════════════════════════╝")
+            senao escreval("opção inválida")
+            fimse
+
+                        leia(optCompra2)
+                escolha optCompra2
+
+caso 1
+    escreval("Você escolheu a Ducati Panigale V4 para alugar.")
+    escreval("Por quantos dias você deseja alugar?")
+    leia(diasAluguel)
+    valorAluguel := diasAluguel * 1000
+    escreval("O custo total do aluguel é de: R$", valorAluguel)
+
+    escreva("Deseja aprovar a simulação do aluguel? (1 - Sim, 2 - Não)")
+    leia(aprovacao)
+    se (aprovacao = 1) entao
+        escreval("Simulação aprovada! Agende um atendimento com um de nossos atendentes.")
+        // ... (código para agendar)
+    senao
+        escreval("Simulação não aprovada. Obrigado pela visita!")
+    fimse
+
+caso 2
+    escreval("Você escolheu a BMW S 1000 RR para alugar.")
+    escreval("Por quantos dias você deseja alugar?")
+    leia(diasAluguel)
+    valorAluguel := diasAluguel * 1000
+    escreval("O custo total do aluguel é de: R$", valorAluguel)
+
+    escreva("Deseja aprovar a simulação do aluguel? (1 - Sim, 2 - Não)")
+    leia(aprovacao)
+    se (aprovacao = 1) entao
+        escreval("Simulação aprovada! Agende um atendimento com um de nossos atendentes.")
+        // ... (código para agendar)
+    senao
+        escreval("Simulação não aprovada. Obrigado pela visita!")
+    fimse
+
+
+    caso 3
+    escreval("Você escolheu a BMW R 1250 GS para alugar.")
+    escreval("Por quantos dias você deseja alugar?")
+    leia(diasAluguel)
+    valorAluguel := diasAluguel * 1000
+    escreval("O custo total do aluguel é de: R$", valorAluguel)
+
+    escreva("Deseja aprovar a simulação do aluguel? (1 - Sim, 2 - Não)")
+    leia(aprovacao)
+    se (aprovacao = 1) entao
+        escreval("Simulação aprovada! Agende um atendimento com um de nossos atendentes.")
+    senao
+        escreval("Simulação não aprovada. Obrigado pela visita!")
+    fimse
+
+  
+caso 4
+    escreval("Você escolheu a Harley-Davidson CVO Limited para alugar.")
+    escreval("Por quantos dias você deseja alugar?")
+    leia(diasAluguel)
+    valorAluguel := diasAluguel * 1000
+    escreval("O custo total do aluguel é de: R$", valorAluguel)
+
+    escreva("Deseja aprovar a simulação do aluguel? (1 - Sim, 2 - Não)")
+    leia(aprovacao)
+    se (aprovacao = 1) entao
+        escreval("Simulação aprovada! Agende um atendimento com um de nossos atendentes.")
+    senao
+        escreval("Simulação não aprovada. Obrigado pela visita!")
+    fimse
+
+caso 5
+    escreval("Você escolheu a Harley-Davidson LiveWire para alugar.")
+    escreval("Por quantos dias você deseja alugar?")
+    leia(diasAluguel)
+    valorAluguel := diasAluguel * 1000
+    escreval("O custo total do aluguel é de: R$", valorAluguel)
+
+    escreva("Deseja aprovar a simulação do aluguel? (1 - Sim, 2 - Não)")
+    leia(aprovacao)
+    se (aprovacao = 1) entao
+        escreval("Simulação aprovada! Agende um atendimento com um de nossos atendentes.")
+    
+    senao
+        escreval("Simulação não aprovada. Obrigado pela visita!")
+    fimse
+
+caso 6
+    escreval("Você escolheu a Yamaha MT-10 para alugar.")
+    escreval("Por quantos dias você deseja alugar?")
+    leia(diasAluguel)
+    valorAluguel := diasAluguel * 1000
+    escreval("O custo total do aluguel é de: R$", valorAluguel)
+
+    escreva("Deseja aprovar a simulação do aluguel? (1 - Sim, 2 - Não)")
+    leia(aprovacao)
+    se (aprovacao = 1) entao
+        escreval("Simulação aprovada! Agende um atendimento com um de nossos atendentes.")
+        
+    senao
+        escreval("Simulação não aprovada. Obrigado pela visita!")
+    fimse
+
+caso 7
+    escreval("Você escolheu a Yamaha MT-09 para alugar.")
+    escreval("Por quantos dias você deseja alugar?")
+    leia(diasAluguel)
+    valorAluguel := diasAluguel * 1000
+    escreval("O custo total do aluguel é de: R$", valorAluguel)
+
+    escreva("Deseja aprovar a simulação do aluguel? (1 - Sim, 2 - Não)")
+    leia(aprovacao)
+    se (aprovacao = 1) entao
+        escreval("Simulação aprovada! Agende um atendimento com um de nossos atendentes.")
+    senao
+        escreval("Simulação não aprovada. Obrigado pela visita!")
+    fimse
+
+caso 8
+    escreval("Você escolheu a Indian Roadmaster para alugar.")
+    escreval("Por quantos dias você deseja alugar?")
+    leia(diasAluguel)
+    valorAluguel := diasAluguel * 1000
+    escreval("O custo total do aluguel é de: R$", valorAluguel)
+
+    escreva("Deseja aprovar a simulação do aluguel? (1 - Sim, 2 - Não)")
+    leia(aprovacao)
+    se (aprovacao = 1) entao
+        escreval("Simulação aprovada! Agende um atendimento com um de nossos atendentes.")
+    senao
+        escreval("Simulação não aprovada. Obrigado pela visita!")
+    fimse
+
+caso 9
+    escreval("Você escolheu a Triumph Rocket 3 para alugar.")
+    escreval("Por quantos dias você deseja alugar?")
+    leia(diasAluguel)
+    valorAluguel := diasAluguel * 1000
+    escreval("O custo total do aluguel é de: R$", valorAluguel)
+
+    escreva("Deseja aprovar a simulação do aluguel? (1 - Sim, 2 - Não)")
+    leia(aprovacao)
+    se (aprovacao = 1) entao
+        escreval("Simulação aprovada! Agende um atendimento com um de nossos atendentes.")
+    senao
+        escreval("Simulação não aprovada. Obrigado pela visita!")
+    fimse
+
+caso 10
+    escreval("Você escolheu a MV Agusta Rush 1000 para alugar.")
+    escreval("Por quantos dias você deseja alugar?")
+    leia(diasAluguel)
+    valorAluguel := diasAluguel * 1000
+    escreval("O custo total do aluguel é de: R$", valorAluguel)
+
+    escreval("Deseja aprovar a simulação do aluguel? (1 - Sim, 2 - Não)")
+    leia(aprovacao)
+    se (aprovacao = 1) entao
+        escreval("Simulação aprovada! Agende um atendimento com um de nossos atendentes.")
+    senao
+        escreval("Simulação não aprovada. Obrigado pela visita!")
+    fimse
+
+
+       fimescolha // optCompra 2 dnv
+        
+
+// ... (código semelhante para alugar motocicletas de luxo)
+
+               
+
+
+
+fimescolha//opt
+fimescolha//optcd
+
+ate ( opt = 5)
 fimalgoritmo
