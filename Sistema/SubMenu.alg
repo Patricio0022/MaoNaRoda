@@ -15,7 +15,7 @@ funcao limpartela(): caractere
 		var
 
 		inicio
-			escreval("            		               .")
+			escreval("            		                 .")
 			escreval("             			             .")
 			escreval("            			             .")
 			escreval("             			             .")
@@ -36,7 +36,6 @@ funcao limpartela(): caractere
 			escreval("            			             .")
 			escreval("             			             .")
 			escreval("            			             .")
-      escreval("       ")
   	fimfuncao
 
 
@@ -223,7 +222,7 @@ caso 3
         escreval("║═══════════════════════════════║")
         escreval("║ 2- Alugar                     ║")
         escreval("║═══════════════════════════════║")
-        escreval("║ 3- Parcelas                   ║")
+        escreval("║ 3- Financiamento              ║")
         escreval("║═══════════════════════════════║")
         escreval("║ 4- Descontos                  ║")
         escreval("║═══════════════════════════════║")
@@ -555,7 +554,7 @@ fimse
 
     caso 3
     se ( optbuy = 3) entao//parcelas
-    escreval("Voce escolheu Parcelas")
+    escreval("Voce escolheu Parcelas de Financiamento")
 
         escreval("Digite o valor financiado: R$ ")
         leia(valorFinanciado)
