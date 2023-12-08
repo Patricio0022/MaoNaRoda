@@ -47,7 +47,6 @@ escreval("╚══════════════════════�
 
 
 
-// se liga na porche do pai
         Caso "2"
 repita
 limpatela
